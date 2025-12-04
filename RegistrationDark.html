@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Register</title>
+    <meta name="viewport" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/registerStyleDark.css">
+</head>
+<body>
+    <form action="http://www.no-where.com/formhandler.php">
+    <div class="container">
+        <h1>Y register form</h1>
+        <div><img src="images/darkLogo1.png" alt="Y Logo" class="imgLogo"></div>
+        <div>Register a new account</div>
+        <div class="forms">
+            <input type="Text" aria-label="Enter yor first name here" pattern="[A-Za-z ]{2,}" required placeholder="First Name">
+            <input type="Text" aria-label="Enter your last name here" pattern="[A-Za-z ]{2,}" required placeholder="Last Name">
+            <input type="tel" aria-label="Enter your phone number here" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required placeholder="Phone number">
+            <input type="email" aria-label="Enter your e-mail adress here" required placeholder="Email">
+            <div class="info1">Format for phone number: 00-00-00-00</div>
+            <div class="info1">Format for email: example@example.com</div>
+            <input type="Text" aria-label="Enter username here" required placeholder="Username">
+            <input type="date" required placeholder="Date of Birth"> 
+            <input type="password" aria-label="Enter password here" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one upper and lowercase, and at least 8 or more characters" required placeholder="Password"> 
+            <input type="password" aria-label="Confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one upper and lowercase, and at least 8 or more characters" required placeholder="Confirm Password">
+        </div>
+        <div class="info2">Format for password: at least one number, one upper and lowercase letter, and at least 8 or more characters</div>
+        <div class="forms">
+            <input type="Text" aria-label="Enter country here" required placeholder="Country"> 
+            <input type="Text" aria-label="Enter adress here" required placeholder="Adress">
+            <input type="Text" aria-label="Enter postal code here" required placeholder="Postal Code"> 
+            <fieldset class="Language" aria-label="Choose language">Language
+                <select name="Language" class="language"> 
+                <option value="English" aria-label="English" required name="English">English</option>
+                <option value="Polish" aria-label="Polish">Polish</option>
+                <option value="Romanian" aria-label="Romanian">Romanian</option>
+                <option value="Spanish" aria-label="Spanish">Spanish</option>
+                <option value="Italian" aria-label="Italian">Italian</option>
+                </select>
+            </fieldset>
+        </div>
+        <fieldset class="GenderName" aria-label="Choose gender"><p>Gender</p>
+            <input type="radio" name="gender" value="Male" id="Male">
+            <label for="Male">Male</label> 
+            <input type="radio" name="gender" value="Female" id="Female" >
+            <label for="Female">Female</label> 
+            <input type="radio" name="gender" value="Different" id="Other" required>
+            <label for="Different">Other</label>
+        </fieldset>
+        <div><button type="button" class="button"><a href="terms.html">Terms of service</a></button></div>
+        <div><button type="button" class="button"><a href="privacy.html">Privacy Policy</a></button></div>
+        <div><input type="submit" value="Register" class="register"></input></div>
+        <button type="button" class="DarkTheme" aria-label="Change to light theme"><a href="Registration.html">Light theme</a></button>
+        <div><a href="index.html" class="link">I already have an account</a></div>
+    </div>
+    </form>
+</body>
+</html>
